@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            background-image: url('tree.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color:rgb(255, 255, 255);
+            
+        }
+        header {
+            background-color: orange;
+            color: WHITE;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(92, 58, 123);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+            color: #333;
+        }
+        .english{
+            margin-left: 20%;
+
+        }
+        footer {
+            background-color: green;
+            text-align: center;
+            padding: 10px 0;
+            poition= absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .pchange{
+            color: white;
+        }
+      .colorchange{
+        color: white;
+      }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to our Language Learning Website</h1>
+</header>
+
+<nav>
+    <a href="#english">ENGLISH</a>
+    <a href="#hindi">HINDI</a>
+    
+</nav>
+
+<main>
+    <div class="english">
+    <div class="eng1">
+        <div class="colorchange">
+        <h2>ENGLISH:Basics</h2>
+        </div>
+        <p class="pchange">This section covers basic vocabulary and grammar.</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400px">
+            <source src="basics.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="eng2">
+        <div class="colorchange">
+        <h2 >ENGLISH: Intermediate</h2>
+        </div>
+        <p class="pchange">This section covers intermediate topics and exercises.</p>
+        <audio controls width="400px">
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400px" >
+            <source src="intermediate.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="eng3">
+        <div class="colorchange">
+        <h2>ADVANCED: Intermediate</h2>
+        </div>
+        <p class="pchange">This section covers advanced topics and exercises.</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400px">
+            <source src="advanced.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Language Learning Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
