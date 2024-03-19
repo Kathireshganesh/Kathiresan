@@ -1,0 +1,118 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(189, 21, 49);  
+}  
+.container {  
+    padding:15px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 75%;  
+  padding: 15px;  
+  margin: 2px ;  
+  display: inline-block;
+  border: none;  
+  background: rgb(255,255,255);  
+}  
+input[type=text], input[type=password] {  
+  background-color: rgb(255, 255, 255);  
+  outline: none;  
+}  
+ div {  
+            padding: 10px ;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+} 
+input{
+  margin-left: 30px;
+} 
+.move1{
+  display: inline;
+  margin-left: 20px;
+}
+.user{
+  ;
+}
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> REGISTER FORM</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<br>
+<label> Lastname </label>      
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+LANGUAGES:  
+</label>   
+  
+<select>  
+<option value="pick your language">pick your language</option>  
+<option value="English">English</option>  
+<option value="French">French</option>  
+<option value="Russian">Russian</option>  
+<option value="chinese">Chinese</option>  
+<option value="Arabic">Arabic</option>    
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder=""  value="" size="2"/> <br> 
+<label>current Address : </label><br> 
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>
+<br>  
+ <label for="email"><b>Email</b></label>  
+ <div class="move1">
+ <input type="text" placeholder="Enter Email" name="email" required>
+ </div>  
+  <br>
+  <
+    <p class="user">password</p>
+    <div class="move1">
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+    </div>
+   <br>
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <div class="move1">
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required> 
+    </div> 
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>
