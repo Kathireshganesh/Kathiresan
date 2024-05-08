@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.subsection-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.subsection-content {
+    margin-left: 20px;
+    color: #777;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+           
+h2{
+   display:block;
+   color:#4CAF50;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainTitle">About Us</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome to our Language Learning Website</h2>
+            <p>We are dedicated to helping individuals learn multiple languages in an easy and efficient manner.</p>
+            <p>Whether you're a beginner or an advanced learner, our interactive lessons, quizzes, and exercises cater to learners of all levels.</p>
+            <p>Join us today and embark on a rewarding linguistic adventure!</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Our Mission</div>
+            <p>We strive to provide high-quality language learning resources that are both engaging and effective.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Meet the Team</div>
+            <div class="subsection">
+                <div class="subsection-title">John Doe</div>
+                <div class="subsection-content">
+                    <p>Founder & CEO</p>
+                    <p>John is passionate about language learning and technology.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="subsection-title">Jane Smith</div>
+                <div class="subsection-content">
+                    <p>Head of Content</p>
+                    <p>Jane oversees the development of our learning materials, ensuring they are engaging, accurate, and effective.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="appendHere">
+            <h3 class="section-title">Why Choose Us?</h3>
+            <ul id="reasonsList">
+                <li>We offer personalized learning paths.</li>
+                <li>Our content is designed by language experts.</li>
+                <li>We provide interactive and engaging lessons.</li>
+            </ul>
+        </div>
+    </div>
+    <button id="changeColorButton">Change Header</button>
+    <footer>
+        &copy; 2024 YourWebsiteName. All Rights Reserved.
+    </footer>
+    <script>
+        // Task 1: Select element by ID, change content, add class, change style properties
+document.getElementById("mainTitle").textContent = "About Our Language Learning Platform";
+document.getElementById("mainTitle").classList.add("titleClass");
+document.getElementById("mainTitle").style.color = "blue";
+document.getElementById("mainTitle").style.fontSize = "28px";
+document.getElementById("mainTitle").style.fontWeight = "bold";
+document.getElementById("mainTitle").style.textAlign = "center";
+document.getElementById("mainTitle").style.marginBottom = "20px";
+
+// Task 2: Select all <p> elements, change background color
+var paragraphs = document.getElementsByTagName("p");
+for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.backgroundColor = "skyblue"; // Blue color
+}
+
+// Task 3: Create new element and append it
+var newReason = document.createElement("li");
+newReason.textContent = "We offer lifetime access to course materials.";
+document.getElementById("reasonsList").appendChild(newReason);
+
+// Task 4: Add event listeners to button
+document.getElementById("changeColorButton").addEventListener("click", function() {
+    var header = document.getElementById("mainTitle");
+    header.style.color = getRandomColor();
+    header.textContent = "Language Learning Hub";
+});
+
+
+
+
+
+// Function to generate random color
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+        
+    </script>
+</body>
+</html>
